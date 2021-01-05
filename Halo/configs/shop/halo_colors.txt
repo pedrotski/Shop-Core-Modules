@@ -1,0 +1,264 @@
+"Halo_Colors"
+{
+	"name"        "Halo's"    // Ќазвание в меню
+	"description"        "Nimbus Aura Over Your Head! (Lasts 3 days equipped)"    // Описание в меню
+	"red"		// Идентефикатор в бд
+	{
+		"name" "Red"	// Название
+		"color" "255 0 0 255"	// Цвет ауры
+		"price" "495"	// Цена ауры
+		"duration" "259200"	// Длительность ауры
+	}
+	"blue"
+	{
+		"name" "Blue"
+		"color" "0 0 255 255"
+		"price" "495"
+		"duration" "259200"
+	}
+	"green"
+	{
+		"name" "Green"
+		"color" "0 255 0 255"
+		"price" "495"
+		"duration" "259200"
+	}
+		"peach"
+	{
+		"name" "Peach"
+		"color" "255 229 180 255"
+		"price" "495"
+	    "duration" "259200"
+	}
+	"white"
+	{
+		"name" "White"
+		"color" "255 255 255 255"
+		"price" "495"
+	    "duration" "259200"
+	}
+	"yellow"
+	{
+		"name" "Yellow"
+		"color" "255 255 0 255"
+		"price" "495"
+	    "duration" "259200"
+	}	
+		"purple"
+	{
+		"name" "Purple"
+		"color" "128 0 255 255"
+		"price" "495"
+	    "duration" "259200"
+	}
+			"blue2"
+	{
+		"name" "Dark Blue"
+		"color" "0 128 255 255"
+		"price" "495"
+	    "duration" "259200"
+	}
+			"orange"
+	{
+		"name" "Orange"
+		"color" "255 102 0 255"
+		"price" "495"
+	    "duration" "259200"
+	}
+				"Black"
+	{
+		"name" "Black"
+		"color" "0 0 51 255"
+		"price" "495"
+	    "duration" "259200"
+	}
+				"BlackBlue"
+	{
+		"name" "Black Blue (-)"
+		"color" "25 25 112 255"
+		"price" "495"
+	    "duration" "259200"
+	}
+				"OrangeRed4"
+	{
+		"name" "Orange Red (-)"
+		"color" "139 37 0 255"
+		"price" "495"
+	    "duration" "259200"
+	}
+				"DeepPink1"
+	{
+		"name" "Dark Pink"
+		"color" "255 20 147 255"
+		"price" "495"
+	    "duration" "259200"
+	}
+				"DarkRed"
+	{
+		"name" "Dark Red (-)"
+		"color" "139 0 0 255"
+		"price" "495"
+	    "duration" "259200"
+	}
+				"LightGreen"
+	{
+		"name" "Light Green"
+		"color" "144 238 144 255"
+		"price" "495"
+	    "duration" "259200"
+	}
+				"BlackBlue"
+	{
+		"name" "Black Blue Too (-)"
+		"color" "28 28 28 255"
+		"price" "495"
+	    "duration" "259200"
+	}
+					"DeepPink"
+	{
+		"name" "Darker Pink"
+		"color" "255 20 147 255"
+		"price" "495"
+	    "duration" "259200"
+	}
+					"DarkViolet"
+	{
+		"name" "Dark Violet"
+		"color" "148 0 211 255"
+		"price" "495"
+	    "duration" "259200"
+	}
+					"Snow4"
+	{
+		"name" "Snow"
+		"color" "139 137 137 137"
+		"price" "495"
+	    "duration" "259200"
+	}
+					"LightSkyBlue1"
+	{
+		"name" "Sky Blue"
+		"color" "176 226 255 255"
+		"price" "495"
+	    "duration" "259200"
+	}
+					"Turquoise1"
+	{
+		"name" "Turquoiseй"
+		"color" "0 245 255 255"
+		"price" "495"
+	    "duration" "259200"
+	}
+					"SpringGreen3"
+	{
+		"name" "Spring Green"
+		"color" "0 205 102 102"
+		"price" "495"
+	    "duration" "259200"
+	}
+						"OliveDrab1"
+	{
+		"name" "Olive"
+		"color" "192 255 62 62"
+		"price" "495"
+	    "duration" "259200"
+	}				
+              	"Khaki1"
+	{
+		"name" "Kahki"
+		"color" "255 246 143 143"
+		"price" "495"
+	    "duration" "259200"
+	}					
+	"Yellow1"
+	{
+		"name" "Yellow"
+		"color" "255 255 0 150"
+		"price" "495"
+	    "duration" "259200"
+	}			
+	"Goldenrod2"
+	{
+		"name" "Golden"
+		"color" "238 180 34 200"
+		"price" "495"
+	    "duration" "259200"
+	}			
+	"IndianRed1"
+	{
+		"name" "Indian Red"
+		"color" "255 106 106 106"
+		"price" "495"
+	    "duration" "259200"
+	}		
+	"Sienna2"
+	{
+		"name" "Sienna"
+		"color" "238 121 66 66"
+		"price" "495"
+	    "duration" "259200"
+	}		
+	"Chocolate4"
+	{
+		"name" "Chocolate"
+		"color" "139 69 19 102"
+		"price" "495"
+	    "duration" "259200"
+	}		
+	"Chocolate1"
+	{
+		"name" "Dark Chocolate"
+		"color" "255 127 36 102"
+		"price" "495"
+	    "duration" "259200"
+	}			
+	"Firebrick1"
+	{
+		"name" "Fire"
+		"color" "255 48 48 102"
+		"price" "495"
+	    "duration" "259200"
+	}			
+	"Firebrick4"
+	{
+		"name" "Fire Brick"
+		"color" "139 26 26 102"
+		"price" "495"
+	    "duration" "259200"
+	}		
+	"Orange2"
+	{
+		"name" "Orange 2"
+		"color" "238 154 0 190"
+		"price" "495"
+	    "duration" "259200"
+	}		
+	"Red1"
+	{
+		"name" "Wild Red"
+		"color" "255 0 0 102"
+		"price" "495"
+	    "duration" "259200"
+	}		
+	"Red2"
+	{
+		"name" "Mystic Red"
+		"color" "139 0 0 190"
+		"price" "495"
+	    "duration" "259200"
+	}			
+	"Magenta4"
+	{
+		"name" "Magenta"
+		"color" "139 0 139 190"
+		"price" "495"
+	    "duration" "259200"
+	}			
+	"grey21"
+	{
+		"name" "Grey"
+		"color" "54 54 54 54"
+		"price" "495"
+	    "duration" "259200"
+	}
+}

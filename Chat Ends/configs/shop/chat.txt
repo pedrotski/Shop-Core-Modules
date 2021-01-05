@@ -1,0 +1,242 @@
+"Chat"
+{
+	"name_color_name"			"Nickname color"		// Category name in the menu
+	"name_color_description"	""					// Description of the category in the menu
+	"name_color_enable"			"1"				// Enable / disable categories
+
+	"text_color_name"			"Text color"			// Category name in the menu
+	"text_color_description"	""					// Description of the category in the menu
+	"text_color_enable"			"1"				// Enable / disable categories
+
+	"prefix_color_name"			"Prefix color"			// Category name in the menu
+	"prefix_color_description"	""					// Description of the category in the menu
+	"prefix_color_enable"		"1"					// Enable / disable categories
+
+	"prefix_name"				"Prefix"			// Category name in the menu
+	"prefix_description"		""					// Description of the category in the menu
+	"prefix_enable"				"1"				// Enable / disable categories
+	
+	"ends_color_name"			"End color"			// Category name in the menu
+	"ends_color_description"	""					// Description of the category in the menu
+	"ends_color_enable"			"1"				// Enable / disable categories
+
+	"ends_name"				"End of message"		// Category name in the menu
+	"ends_description"			""				// Description of the category in the menu
+	"ends_enable"				"1"				// Enable / disable categories
+	
+	"ignore_ends_triggers"		"1"					//	Ignore messages for endings that start with '!', '/', '@'
+	"ignore_chat_triggers"		"0"					//	Ignore messages that start with '!', '/', '@'
+	"Colors"
+	{
+		"greenclr"
+		{
+			"color"  		"{GREEN}" 	// Color code
+			"name"			"Green" 	// Item name in the menu
+			"price"  		"200"  		// Item purchase price or 0, free
+			"sellprice" 	"100"  			// Item selling price
+			"duration"  	"3600"  		// Duration of using the item in seconds or 0, so that it is forever
+		}
+		"teamclr"
+		{
+			"color"			"{TEAM}"	
+			"name"			"Command"	
+			"price"			"200"		
+			"sellprice"		"100"		
+			"duration"		"3600"		
+		}
+		"whiteclr"
+		{
+			"color"			"{DEFAULT}"	
+			"name"			"White"	
+			"price"			"200"		
+			"sellprice"		"100"		
+			"duration"		"3600"		
+		}
+		"blueclr"
+		{
+			"color"			"{BLUE}"	
+			"name"			"Blue"	
+			"price"			"200"		
+			"sellprice"		"100"		
+			"duration"		"3600"		
+		}
+		"lblueclr"
+		{
+			"color"			"{LIGHTBLUE}"	
+			"name"			"Light Blue"	
+			"price"			"200"		
+			"sellprice"		"100"		
+			"duration"		"3600"		
+		}
+		"pinkclr"
+		{
+			"color"			"{PURPLE}"	
+			"name"			"Purple"	
+			"price"			"200"		
+			"sellprice"		"100"		
+			"duration"		"3600"		
+		}
+		"oliveclr"
+		{
+			"color"			"{OLIVE}"	
+			"name"			"Olive"	
+			"price"			"200"		
+			"sellprice"		"100"		
+			"duration"		"3600"		
+		}
+		"yellowclr"
+		{
+			"color"			"{LIGHTOLIVE}"	
+			"name"			"Light Olive"	
+			"price"			"200"		
+			"sellprice"		"100"		
+			"duration"		"3600"		
+		}
+		"grayclr"
+		{
+			"color"			"{GRAY}"	
+			"name"			"Gray"	
+			"price"			"200"		
+			"sellprice"		"100"		
+			"duration"		"3600"		
+		}
+		"lredclr"
+		{
+			"color"			"{LIGHTRED}"	
+			"name"			"Light Red"	
+			"price"			"200"		
+			"sellprice"		"100"		
+			"duration"		"3600"		
+		}
+		"lgreenclr"
+		{
+			"color"			"{LIGHTGREEN}"	
+			"name"			"Light Green"	
+			"price"			"200"		
+			"sellprice"		"100"		
+			"duration"		"3600"		
+		}
+		"limeclr"
+		{
+			"color"			"{LIME}"	
+			"name"			"Lime"	
+			"price"			"200"		
+			"sellprice"		"100"		
+			"duration"		"3600"		
+		}
+		"redclr"
+		{
+			"color"			"{RED}"
+			"name"			"Red"
+			"price"			"200"
+			"sellprice"		"100"
+			"duration"		"3600"
+		}
+	}
+	"Prefixes"
+	{
+		"custom"
+		{
+			"tag"			"custom"	// Tag (custom allows the user to enter the tag into the chat themselves)
+			"name"			"custom"	// Item name in the menu
+			"price"			"200"		// Item purchase price
+			"sellprice"		"100"		// Item selling price
+			"duration"		"3600"		// Duration of using the item in seconds or 0, so that it is forever
+		}
+		"tag1"
+		{
+			"tag"			"[Best ZE Server]"	
+			"price"			"2"		
+			"sellprice"		"100"		
+			"duration"		"3600"		
+		}
+		"tag2"
+		{
+			"tag"			"[HACKER]"	
+			"price"			"200"		
+			"sellprice"		"100"		
+			"duration"		"3600"		
+		}
+		"tag3"
+		{
+			"tag"			"[KILLER]"	
+			"price"			"200"		
+			"sellprice"		"100"		
+			"duration"		"3600"		
+		}
+		"tag4"
+		{
+			"tag"			"[2K21]"	
+			"price"			"200"		
+			"sellprice"		"100"		
+			"duration"		"3600"		
+		}
+		"tag5"
+		{
+			"tag"			"[Princess]"	
+			"price"			"200"		
+			"sellprice"		"100"		
+			"duration"		"3600"		
+		}
+		"tag6"
+		{
+			"tag"			"[ANNIHILATOR]"	
+			"price"			"200"		
+			"sellprice"		"100"		
+			"duration"		"3600"		
+		}
+		"tag7"
+		{
+			"tag"			"[WEEKY]"	
+			"price"			"200"		
+			"sellprice"		"100"		
+			"duration"		"3600"		
+		}
+		"tag8"
+		{
+			"tag"			"[Mister]"	
+			"price"			"200"		
+			"sellprice"		"100"		
+			"duration"		"3600"		
+		}
+		"tag9"
+		{
+			"tag"			"[Miss]"	
+			"price"			"200"		
+			"sellprice"		"100"		
+			"duration"		"3600"		
+		}
+		"tag10"
+		{
+			"tag"			"[Pepe]"	
+			"price"			"200"		
+			"sellprice"		"100"		
+			"duration"		"3600"		
+		}
+	}
+	"Ends"
+	{
+		"custom_end"
+		{
+			"end"			"custom_end"		// Title (custom_end allows the user to enter the tag into the chat himself)
+			"name"			"Custom"	
+			"price"			"200"				
+			"sellprice"		"100"				
+			"duration"		"3600"				
+		}
+		"end1"
+		{
+			"end"			"nyan :3"	
+			"price"			"200"		
+			"sellprice"		"100"		
+			"duration"		"3600"		
+		}
+		"end2"
+		{
+			"end"			"ya know what i mean"	
+			"price"			"200"		
+			"sellprice"		"100"		
+			"duration"		"3600"		
+		}
+	}
+}
