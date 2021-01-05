@@ -1,0 +1,117 @@
+"Pets"
+{
+	"chicken" // Database name
+	{
+		"Name" "Chicken" // Name
+		"description" "" // Description
+		"Model" "models/chicken/chicken.mdl" // Model path
+		"Position" "50.0 0.0 0.0" // Model position
+		"Angles" "0.0 0.0 0.0" // Angle
+		"spawn" "none" // Animation when the player spawns (Set to none if you want to disable)
+		"Idle" "idle01" // Animation when the player is standing still
+		"Run" "run01" // Animation when the player walks
+		"skin" "1" // Skin number (Usually all models have only 1 skin.)
+		"scale" "1.0" // Pet size (Standard 1.0)
+		"price" "2000" // Price
+		"sell_price" "500" // Selling price (Put -1 if you want to prohibit selling in the store)
+		"luckchance" "1" // Is it possible to knock out of luck (1 - Yes / 0 - No)
+		"duration" "0" // Usage time (In seconds. Put 0 if you want the pet to be sold forever!)
+		"hide" "0" // Whether to hide the pet or not. (1 - Yes / 0 - No)
+	}
+}
+
+//////////////////////////NEED TO ADD WITH NEW SYNTAX!////////////////////////////// ^^^^^^^^^^^^^^^^^
+		"Chicken"
+		{
+			"model" "models/chicken/chicken.mdl"
+			"position" "50.0 0.0 0.0"
+			"angles" "0.0 0.0 0.0"
+			"idle" "idle01"
+			"run" "run01"
+			"price" "2400"
+			"type" "pet"
+		}
+
+		"Chicken Zombie"
+		{
+			"model" "models/chicken/chicken_zombie.mdl"
+			"position" "50.0 0.0 0.0"
+			"angles" "0.0 0.0 0.0"
+			"idle" "idle01"
+			"run" "run01"
+			"price" "2400"
+			"type" "pet"
+		}
+
+		"Crow"
+		{
+			"model" "models/crow.mdl"
+			"position" "50.0 0.0 0.0"
+			"angles" "0.0 0.0 0.0"
+			"idle" "Idle01"
+			"run" "Run"
+			"unique_id" "crow_running"
+			"price" "2400"
+			"type" "pet"
+		}
+
+		"Crow Flying"
+		{
+			"model" "models/crow.mdl"
+			"position" "50.0 0.0 70.0"
+			"angles" "0.0 0.0 0.0"
+			"idle" "Fly01"
+			"run" "Fly01"
+			"unique_id" "crow_flying"
+			"price" "2400"
+			"type" "pet"
+		}
+
+		"Pigeon"
+		{
+			"model" "models/pigeon.mdl"
+			"position" "50.0 0.0 0.0"
+			"angles" "0.0 0.0 0.0"
+			"idle" "Idle01"
+			"run" "Run"
+			"unique_id" "pigeon_running"
+			"price" "2400"
+			"type" "pet"
+		}
+
+		"Pigeon Flying"
+		{
+			"model" "models/pigeon.mdl"
+			"position" "50.0 0.0 70.0"
+			"angles" "0.0 0.0 0.0"
+			"idle" "Fly01"
+			"run" "Fly01"
+			"unique_id" "pigeon_flying"
+			"price" "2400"
+			"type" "pet"
+		}
+
+		"Seagull"
+		{
+			"model" "models/seagull.mdl"
+			"position" "50.0 0.0 0.0"
+			"angles" "0.0 0.0 0.0"
+			"idle" "Idle01"
+			"run" "Run"
+			"unique_id" "seagull_running"
+			"price" "2400"
+			"type" "pet"
+		}
+
+		"Seagull Flying"
+		{
+			"model" "models/seagull.mdl"
+			"position" "50.0 0.0 70.0"
+			"angles" "0.0 0.0 0.0"
+			"idle" "Fly"
+			"run" "Fly"
+			"unique_id" "seagull_flying"
+			"price" "2400"
+			"type" "pet"
+		}
+	}
