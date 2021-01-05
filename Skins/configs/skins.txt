@@ -1,0 +1,23 @@
+"Skins"
+{
+    "delay_before_set_spawn" "1.0"
+
+	"skin1"	// Database identifier
+	{
+		"name"	""	// Skin name
+		"description"	"NO ACCESSORIES!"	// Description of skins
+		"ModelT"        "" // The path to the terrorist model  
+		"ModelT_Arms"   "" // Path to the model of terrorist hands 
+		"ModelCT"       "" // Path to the SWAT model 
+		"ModelCT_Arms"  "" // The path to the SWAT hand model 
+		"price"			"10000"	// Cost in credits
+		//"gold_price"	"20"    // Item cost for gold
+		"sell_price"	"5000"	// Selling price or -1 to make it not sellable.
+		//"gold_sell_price"	"5" // Selling price for gold
+		"color"			"255 255 255 255"	// Skin color		
+		"preview_anim"  "default" // Skin animation in preview mode
+		"hide"			"0" // Whether to hide the skin from store
+		"luckchance"	"10" // Item drop chance
+		"duration"		"0"	// Skin duration
+	}
+}
