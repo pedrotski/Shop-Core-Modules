@@ -1,0 +1,29 @@
+"Neon"
+{
+	"name"			"Neon"						// Название в меню
+	"description"	""	// Описание в меню
+	"red_neon"									// Идентефикатор в бд
+	{
+		"name" "Red"						// Название
+		"color" "255 0 0 255"					// Цвет неона
+		"price" "200"							// Цена покупки неона
+		"sellprice"  "100"						// Цена продажи неона
+		"duration" "3600"						// Длительность неона
+	}
+	"blue_neon"
+	{
+		"name" "Blue"
+		"color" "0 0 255 255"
+		"price" "200"
+		"sellprice"  "100"
+		"duration" "3600"
+	}
+	"green_neon"
+	{
+		"name" "Green"
+		"color" "0 255 0 255"
+		"price" "200"
+		"sellprice"  "100"
+		"duration" "3600"
+	}
+}
