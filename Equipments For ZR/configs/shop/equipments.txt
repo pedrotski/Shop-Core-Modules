@@ -1,0 +1,607 @@
+"Equipments"
+{ 
+	"glasses"
+	{
+		"en"	"Glasses"
+		"ru"	"Очки"
+		
+		"3d"
+		{
+			"name"	"3D очки"
+			"price" 		"7000"  
+			"sell_price" 		"3500"
+			"duration"			"604800"
+			"model"			"models/gmod_tower/3dglasses.mdl"
+			
+			"attachment"		"forward"
+			
+			"position"		"0.0 0.5 2.0"
+			"angles"		"0.0 0.0 0.0"
+			
+			"classes"
+			{
+				"models\player\techknow\left4dead\zoey.mdl"
+				{
+					"attachment"		"forward"
+					
+					"position"		"0.0 -1.5 2.0"
+					"angles"		"0.0 0.0 0.0"
+				}
+
+				"models\player\techknow\left4dead\louis.mdl"
+				{
+					"attachment"		"forward"
+					
+					"position"		"0.0 -1.0 4.0"
+					"angles"		"0.0 0.0 0.0"
+				}
+				
+				"models\player\techknow\left4dead\francis.mdl"
+				{
+					"attachment"		"forward"
+					
+					"position"		"0.0 -0.5 2.0"
+					"angles"		"0.0 0.0 0.0"				
+				}								
+			}			
+		}
+		
+		"kleiner"
+		{
+			"name"	"Очки Клейнера"
+			"price" 		"7000"  
+			"sell_price" 		"3500"
+			"duration"			"604800"
+			"model"			"models/gmod_tower/klienerglasses.mdl"
+			
+			"attachment"		"forward"
+			
+			"position"		"0.0 0.5 2.0"
+			"angles"		"0.0 0.0 0.0"	
+			
+			"classes"
+			{
+				"models\player\techknow\left4dead\zoey.mdl"
+				{
+					"attachment"		"forward"
+					
+					"position"		"0.0 -2.0 2.0"
+					"angles"		"0.0 0.0 0.0"	
+				}
+				
+				"models\player\techknow\left4dead\louis.mdl"
+				{
+					"attachment"		"forward"
+					
+					"position"		"0.0 -1.0 4.5"
+					"angles"		"0.0 0.0 0.0"
+				}
+
+				"models\player\techknow\left4dead\francis.mdl"
+				{
+					"attachment"		"forward"
+					
+					"position"		"0.0 -1.0 2.0"
+					"angles"		"0.0 0.0 0.0"	
+				}
+
+				"models\player\slow\aot\murray\slow.mdl"
+				{
+					"attachment"		"forward"
+					
+					"position"		"0.0 -2.0 3.5"
+					"angles"		"0.0 0.0 0.0"					
+				}			
+			}			
+		}
+		
+		"aviators"
+		{
+			"name"	"Очки Пилота"
+			"price" 		"7000"  
+			"sell_price" 		"3500"
+			"duration"			"604800"
+			"model"			"models/gmod_tower/aviators.mdl"
+			
+			"attachment"		"forward"
+			
+			"position"		"0.0 0.5 2.0"
+			"angles"		"0.0 0.0 0.0"	
+			
+			"classes"
+			{
+				"models\player\techknow\left4dead\zoey.mdl"
+				{
+					"attachment"		"forward"
+					
+					"position"		"0.0 -2.0 2.0"
+					"angles"		"0.0 0.0 0.0"	
+				}
+				
+				"models\player\techknow\left4dead\louis.mdl"
+				{
+					"attachment"		"forward"
+					
+					"position"		"0.0 -1.0 4.5"
+					"angles"		"0.0 0.0 0.0"
+				}
+
+				"models\player\techknow\left4dead\francis.mdl"
+				{
+					"attachment"		"forward"
+					
+					"position"		"0.0 -1.0 2.0"
+					"angles"		"0.0 0.0 0.0"	
+				}
+
+				"models\player\slow\aot\murray\slow.mdl"
+				{
+					"attachment"		"forward"
+					
+					"position"		"0.0 -2.0 3.5"
+					"angles"		"0.0 0.0 0.0"					
+				}			
+			}			
+		}
+	}
+	"masks"
+	{
+		"en"	"Masks"
+		"ru"	"Маски"
+		
+		"majora"
+		{
+			"name"	"Маска индейца"
+			"price" 		"7000"  
+			"sell_price" 		"3500"
+			"duration"			"604800"
+			"model"			"models/gmod_tower/majorasmask.mdl"
+			
+			"attachment"		"forward"
+			"alt_attachment"	""
+			
+			"position"		"0.0 0.5 0.0"
+			"angles"		"0.0 0.0 0.0"
+		}
+
+		"andros"
+		{
+			"name"	"Маска обязьяна"
+			"price" 		"7000"  
+			"sell_price" 		"3500"
+			"duration"			"604800"
+			"model"		"models/gmod_tower/androssmask.mdl"
+			
+			"attachment"		"forward"
+			"alt_attachment"	""
+			
+			"position"	"0.0 2.0 0.0"
+			"angles"	"0.0 0.0 0.0"
+		}
+
+		"toro"
+		{
+			"name"	"Маска кошка"
+			"price" 		"7000"  
+			"sell_price" 		"3500"
+			"duration"			"604800"
+			"model"		"models/gmod_tower/toromask.mdl"
+			
+			"attachment"		"forward"
+			"alt_attachment"	""
+			
+			"position"	"0.0 -1.0 4.0"
+			"angles"	"0.0 0.0 0.0"
+		}
+	}
+	"hats"
+	{
+		"en"	"Hats"
+		"ru"	"Шляпы"
+		
+		"santa"
+		{
+			"name"	"Шапка деда мороза"
+			"price" 		"7000"  
+			"sell_price" 		"3500"
+			"duration"			"604800"
+			"model"			"models/gmod_tower/santahat.mdl"
+			
+			"attachment"		"forward"
+			"alt_attachment"	"primary"
+			
+			"position"		"0.0 -1.0 6.0"
+			"angles"		"0.0 0.0 0.0"
+		}
+			
+		"watermelon"
+		{
+			"name"	"Арбуз"
+			"price" 		"7000"  
+			"sell_price" 		"3500"
+			"duration"			"604800"
+			"model"			"models/props_junk/watermelon01.mdl"
+			
+			"attachment"		"forward"
+			"alt_attachment"	"primary"
+			
+			"position"		"0.0 0.0 5.0"
+			"angles"		"0.0 0.0 0.0"		
+		}
+		
+		"traffic_cone"
+		{
+			"name"	"Дорожный конус"
+			"price" 		"7000"  
+			"sell_price" 		"3500"
+			"duration"			"604800"
+			"model"			"models/props_junk/trafficcone001a.mdl"
+			
+			"attachment"		"forward"
+			"alt_attachment"	"primary"
+			
+			"position"		"0.0 -1.0 20.0"
+			"angles"		"0.0 0.0 0.0"
+		}
+
+		"sombrero"
+		{
+			"name"	"Самбреро"
+			"price" 		"7000"  
+			"sell_price" 		"3500"
+			"duration"			"604800"
+			"model"			"models/gmod_tower/sombrero.mdl"
+			
+			"attachment"		"forward"
+			"alt_attachment"	"primary"
+			
+			"position"		"0.0 -1.0 6.0"
+			"angles"		"0.0 0.0 0.0"
+		}
+		
+		"headcrab"
+		{
+			"name"	"Хэдкраб"
+			"price" 		"7000"  
+			"sell_price" 		"3500"
+			"duration"			"604800"
+			"model"			"models/gmod_tower/headcrabhat.mdl"
+			
+			"attachment"		"forward"
+			"alt_attachment"	"primary"
+			
+			"position"		"0.0 -3.0 6.0"
+			"angles"		"0.0 0.0 0.0"
+		}
+		
+		"fancy_fedora"
+		{
+			"name"	"Модная шляпа"
+			"price" 		"7000"  
+			"sell_price" 		"3500"
+			"duration"			"604800"
+			"model"			"models/gmod_tower/fedorahat.mdl"
+			
+			"attachment"		"forward"
+			"alt_attachment"	"primary"
+			
+			"position"		"0.0 -1.5 8.5"
+			"angles"		"0.0 0.0 0.0"
+		}
+		
+		"cake"
+		{
+			"name"	"Тортик"
+			"price" 		"7000"  
+			"sell_price" 		"3500"
+			"duration"			"604800"
+			"model"			"models/cakehat/cakehat.mdl"
+			
+			"attachment"		"forward"
+			"alt_attachment"	"primary"
+			
+			"position"		"0.0 -1.0 3.0"
+			"angles"		"0.0 0.0 0.0"
+		}
+		
+		"cat_ears"
+		{
+			"name"	"Ушки кошки"
+			"price" 		"7000"  
+			"sell_price" 		"3500"
+			"duration"			"604800"
+			"model"			"models/gmod_tower/catears.mdl"
+			
+			"attachment"		"forward"
+			"alt_attachment"	"primary"
+			
+			"position"		"0.0 -3.0 6.0"
+			"angles"		"0.0 0.0 0.0"
+		}
+		
+		"аfro"
+		{
+			"name"	"Парик-Афро"
+			"price" 		"7000"  
+			"sell_price" 		"3500"
+			"duration"			"604800"
+			"model"			"models/gmod_tower/afro.mdl"
+			
+			"attachment"		"forward"
+			"alt_attachment"	"primary"
+			
+			"position"		"0.0 -3.0 6.0"
+			"angles"		"0.0 0.0 0.0"
+		}
+		
+		"link"
+		{
+			"name"	"Гоблинская"
+			"price" 		"7000"  
+			"sell_price" 		"3500"
+			"duration"			"604800"
+			"model"			"models/gmod_tower/linkhat.mdl"
+			
+			"attachment"		"forward"
+			"alt_attachment"	"primary"
+			
+			"position"		"0.0 -5.0 4.0"
+			"angles"		"0.0 0.0 0.0"
+		}
+		
+		"party"
+		{
+			"name"	"Праздничная"
+			"price" 		"7000"  
+			"sell_price" 		"3500"
+			"duration"			"604800"
+			"model"			"models/gmod_tower/partyhat.mdl"
+			
+			"attachment"		"forward"
+			"alt_attachment"	"primary"
+			
+			"position"		"1.0 -1.0 7.0"
+			"angles"		"0.0 0.0 0.0"
+		}
+
+		"antlers"
+		{
+			"name"	"Оленьи рога"
+			"price" 		"7000"  
+			"sell_price" 		"3500"
+			"duration"			"604800"
+			"model"		"models/sam/antlers.mdl"
+			
+			"attachment"		"forward"
+			"alt_attachment"	"primary"
+			
+			"position"	"0.0 0.0 2.0"
+			"angles"	"0.0 0.0 0.0"
+		}
+		
+		"car_tire"
+		{
+			"name"	"Шина машины"
+			"price" 		"7000"  
+			"sell_price" 		"3500"
+			"duration"			"604800"
+			"model"		"models/props_vehicles/tire001c_car.mdl"
+			
+			"attachment"		"forward"
+			"alt_attachment"	"primary"
+			
+			"position"	"0.0 -10.0 0.0"
+			"angles"	"90.0 0.0 0.0"
+		}		
+		
+		"terracotta"
+		{
+			"name"	"Цветочный горшок"
+			"price" 		"7000"  
+			"sell_price" 		"3500"
+			"duration"			"604800"
+			"model"		"models/props_junk/terracotta01.mdl"
+			
+			"attachment"		"forward"
+			"alt_attachment"	"primary"
+			
+			"position"	"0.0 3.0 -10.0"
+			"angles"	"180.0 0.0 0.0"
+		}
+
+		"baseball_cap"
+		{
+			"name"	"Бейсбольная кепка"
+			"price" 		"7000"  
+			"sell_price" 		"3500"
+			"duration"			"604800"
+			"model"		"models/props/cs_office/snowman_hat.mdl"
+			
+			"attachment"		"forward"
+			"alt_attachment"	"primary"
+			
+			"position"	"0.0 0.0 7.0"
+			"angles"	"0.0 -90.0 0.0"
+		}
+		
+		"coffee_mug"
+		{
+			"name"	"Кофейная чашка"
+			"price" 		"7000"  
+			"sell_price" 		"3500"
+			"duration"			"604800"
+			"model"		"models/props/cs_office/coffee_mug.mdl"
+			
+			"attachment"		"forward"
+			"alt_attachment"	"primary"
+			
+			"position"	"0.0 0.0 9.0"
+			"angles"	"0.0 0.0 0.0"
+		}
+		
+		"turtle"
+		{
+			"name"	"Черепашка"
+			"price" 		"7000"  
+			"sell_price" 		"3500"
+			"duration"			"604800"
+			"model"		"models/props/de_tides/vending_hat.mdl"
+			
+			"attachment"		"forward"
+			"alt_attachment"	"primary"
+			
+			"position"	"1.8 0.0 4.0"
+			"angles"	"0.0 -90.0 0.0"
+		}
+		
+		"astronaut_helmet"
+		{
+			"name"	"Шлем астронафта"
+			"price" 		"7000"  
+			"sell_price" 		"3500"
+			"duration"			"604800"
+			"model"		"models/astronauthelmet/astronauthelmet.mdl"
+			
+			"attachment"		"forward"
+			"alt_attachment"	"primary"
+			
+			"position"	"0.0 0.0 -5.0"
+			"angles"	"0.0 0.0 0.0"
+		}
+		
+		"viking_helmet"
+		{
+			"name"	"Шлем викинга"
+			"price" 		"7000"  
+			"sell_price" 		"3500"
+			"duration"			"604800"
+			"model"		"models/vikinghelmet/vikinghelmet.mdl"
+			
+			"attachment"		"forward"
+			"alt_attachment"	"primary"
+			
+			"position"	"0.0 -1.0 6.0"
+			"angles"	"0.0 0.0 0.0"
+		}	
+		
+		"kfc_bucket"
+		{
+			"name"	"Ведро KFC"
+			"price" 		"7000"  
+			"sell_price" 		"3500"
+			"duration"			"604800"
+			"model"		"models/gmod_tower/kfcbucket.mdl"
+			
+			"attachment"		"forward"
+			"alt_attachment"	"primary"
+			
+			"position"	"0.0 -1.0 3.0"
+			"angles"	"0.0 0.0 0.0"
+		}
+
+		"dunce"
+		{
+			"name"	"Шапка тупицы"
+			"price" 		"7000"  
+			"sell_price" 		"3500"
+			"duration"			"604800"
+			"model"		"models/duncehat/duncehat.mdl"
+			
+			"attachment"		"forward"
+			"alt_attachment"	"primary"
+			
+			"position"	"0.0 -1.0 6.0"
+			"angles"	"0.0 0.0 0.0"
+		}
+		
+		"drink_cap"
+		{
+			"name"	"Питьевая шапка"
+			"price" 		"7000"  
+			"sell_price" 		"3500"
+			"duration"			"604800"
+			"model"		"models/gmod_tower/drinkcap.mdl"
+			
+			"attachment"		"forward"
+			"alt_attachment"	"primary"
+			
+			"position"	"0.0 -1.0 7.0"
+			"angles"	"0.0 0.0 0.0"
+		}
+		
+		"top_hat"
+		{
+			"name"	"Высокая шляпа"
+			"price" 		"7000"  
+			"sell_price" 		"3500"
+			"duration"			"604800"
+			"model"		"models/gmod_tower/tophat.mdl"
+			
+			"attachment"		"forward"
+			"alt_attachment"	"primary"
+			
+			"position"	"0.0 -1.7 4.5"
+			"angles"	"0.0 0.0 0.0"
+		}
+		
+		"witch"
+		{
+			"name"	"Шапка ведьмы"
+			"price" 		"7000"  
+			"sell_price" 		"3500"
+			"duration"			"604800"
+			"model"		"models/gmod_tower/witchhat.mdl"
+			
+			"attachment"		"forward"
+			"alt_attachment"	"primary"
+			
+			"position"	"0.0 0.0 6.0"
+			"angles"	"0.0 0.0 0.0"
+		}
+		
+		"toeto"
+		{
+			"name"	"Кошка"
+			"price" 		"7000"  
+			"sell_price" 		"3500"
+			"duration"			"604800"
+			"model"		"models/gmod_tower/toetohat.mdl"
+			
+			"attachment"		"forward"
+			"alt_attachment"	"primary"
+			
+			"position"	"0.0 -1.0 6.0"
+			"angles"	"0.0 0.0 0.0"
+		}
+		
+		"seuss"
+		{
+			"name"	"Сьюз"
+			"price" 		"7000"  
+			"sell_price" 		"3500"
+			"duration"			"604800"
+			"model"		"models/gmod_tower/seusshat.mdl"
+			
+			"attachment"		"forward"
+			"alt_attachment"	"primary"
+			
+			"position"	"0.0 -1.0 6.0"
+			"angles"	"0.0 0.0 0.0"
+		}		
+
+		"midna"
+		{
+			"name"	"Шлем"
+			"price" 		"7000"  
+			"sell_price" 		"3500"
+			"duration"			"604800"
+			"model"		"models/gmod_tower/midnahat.mdl"
+			
+			"attachment"		"forward"
+			"alt_attachment"	"primary"
+			
+			"position"	"0.0 0.0 0.0"
+			"angles"	"0.0 0.0 0.0"
+		}	
+	}
+}
