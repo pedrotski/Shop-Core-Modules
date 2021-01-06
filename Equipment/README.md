@@ -1,4 +1,4 @@
-# [Shop] CS:GO Equiptment
+# [Shop] CS:GO Equipment
 
 Allows you to buy various items in the shop by type:
 Backpacks, wings, hats, masks, glasses, cloaks, etc. For which there is enough imagination.
