@@ -1,0 +1,41 @@
+"Equipments"
+{ 
+	"hats"   //Section name
+	{
+		"en"	"Hats"  //section name english
+		"ru"	"Шляпы"  //название раздела в магазине russian
+		
+			
+		"watermelon"  //item name
+		{
+			"name"	"Watermelon"   //the name of the item in the store
+			"price" 		"15000"  //credits price
+			"sell_price" 		"-1"   //credits selling price
+			"gold_price" 			"-1"  //gold price
+			"gold_sell_price" 	"-1"   //gold selling price
+			"duration"			"3600"   //time for how long the item is bought to put only in seconds, if the item is sold for always then set 0
+			"model"			"models/props_junk/watermelon01.mdl"   //path to your model the model must be in .mdl format
+			
+             "Attributes"   //do not touch if you need effects like gravity
+            {
+                "speed"            "0.1" // +10% speed
+                "gravity"        "0.3" // +10% resistance to gravity
+                "health"        "0.5" // +50% health
+                "armor"            "50" // +50 armor
+                "regen_hp"        "1" // +1 hp per second
+                "regen_armor"    "1" // +1 armor per second
+                "credits"        "0.25" // +25% credits (from gifts, etc.)
+                "damage"        "0.25" // +25% damage
+                "dmgresist"        "0.25" // +25% damage resistance
+                "invis"            "1.0" // +100% transparency
+                "reload"        "1.0" // +100% to reload speed
+            }
+			
+			"attachment"		"facemask"
+			"alt_attachment"	"primary"
+			
+			"position"		"0.0 0.0 5.0"   //position
+			"angles"		"0.0 0.0 0.0"	//angle
+		}
+    }
+}
