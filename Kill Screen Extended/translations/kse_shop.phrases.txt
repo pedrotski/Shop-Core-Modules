@@ -1,0 +1,33 @@
+"Phrases"
+{
+    "PRICE"
+    {
+        "ru" "Цена"
+        "en" "Price"
+    }
+    "SELL_PRICE"
+    {
+        "ru" "Цена продажи"
+        "en" "Sell price"
+    }
+    "DURATION"
+    {
+        "ru" "Продолжительность в секундах"
+        "en" "Duration in seconds"
+    }
+    "DESCRIPTION"
+    {
+        "ru" "Цветной экран при убийстве. \nКоманда для настройки !screen"
+        "en" "Color screen on kill. \nCommand to configure !screen"
+    }
+    "CATEGORY"
+    {
+        "ru" "Эффекты"
+        "en" "Effects"
+    }
+    "ITEM_NAME"
+    {
+        "ru" "Цветной экран при убийстве"
+        "en" "Color screen on kill"
+    }
+}

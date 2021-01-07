@@ -1,0 +1,44 @@
+"Events"
+{
+	//Information about events (Events) can be found here - http://wiki.alliedmods.net/Game_Events_(Source) 
+	"player_death"		// Player death event
+	{
+		"userid"	// Event parameter. In this case, the player who died
+		{
+			"NoWarmUp"		"1"		// Set to 1 to ignore this block during warm-up.
+			
+			"type"	"userid"		// Parameter type (userid and int available)
+			"credits"	"-5"		// Amount of credits. You can also use negative numbers to collect credits. In this case, we subtract
+			"text"	"{green}[Shop] {default}They stole {green}{credits} {default}credits for killing you!"		// Player chat notification
+		}
+		"attacker"	// Event parameter. In this case, the player who killed
+		{
+			"type"	"userid"		// Parameter type (userid and int available)
+			"credits"	"5"		// Amount of credits. You can also use negative numbers to collect credits. In this case, add
+			"text"	"{green}[Shop] {default}You received {green}{credits} {default}credits per kill!"	// Player chat notification
+		}
+	}
+	"round_end"	// End of round
+	{
+		"all"
+		{
+			"team"	"winner"		// The team to whom to issue credits. Digits to indicate a specific command index or a parameter from an event to get a command index from an event
+			"teamfilter"	"0"		// Team filter. Ignores the players on the team under this index. You can also enter event parameters
+			"alive"		"0"			// 1 - to enable the issuance of credits only for live team players
+			"credits"	"15"			// Amount of credits. You can also use negative numbers to collect credits.
+			"text"	"{green}[Shop] {default}You've earned {green}{credits} {default}credits for winning the round!"		// Player chat notification
+		}
+	}
+	"round_start"	// Start of round
+	{
+		"no_copy"	"1"		// For optimization purposes. Enable only when event parameters are missing
+		"all"
+		{
+			"team"	"0"			// 0 - All players
+			"teamfilter"	"1"		// We filter observers, because they don't play
+			"alive"		"0"			// At the start of the round, everyone is alive
+			"credits"	"5"			// Amount of credits. You can also use negative numbers to collect credits.
+			"text"	"{green}[Shop] {default}You've earned {green}{credits} {default}credits for the beginning of the round!"		// Player chat notification
+		}
+	}
+}

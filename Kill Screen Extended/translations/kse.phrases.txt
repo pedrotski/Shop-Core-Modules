@@ -1,0 +1,88 @@
+"Phrases"
+{
+    "PREFIX"
+    {
+        "ru" "{team}[KSE]{green}"
+        "en" "{team}[KSE]{green}"
+    }
+    "MIN_DURATION"
+    {
+        "ru" "Минимальное время затемнения"
+        "en" "Minimum dimming time"
+    }
+    "MAX_DURATION"
+    {
+        "ru" "Максимальное время затемнения"
+        "en" "Maximum dimming time"
+    }
+    "PRIVATE_MODE"
+    {
+        "ru" "Приватный режим (для блокировки команды)"
+        "en" "Private Mode (to block a command)"
+    }
+    "ENABLED"
+    {
+        "ru" "включен"
+        "en" "enabled"
+    }
+    "DISABLED"
+    {
+        "ru" "отключен"
+        "en" "disabled"
+    }
+    "MILLISECONDS"
+    {
+        "ru" "мс."
+        "en" "ms."
+    }
+    "NO_ACCESS"
+    {
+        "ru" "У вас нет доступа"
+        "en" "You do not have access"
+    }
+    "MENU_TITLE"
+    {
+        "ru" "Kill Screen Extended"
+        "en" "Kill Screen Extended"
+    }
+    "STATUS"
+    {
+        "ru" "Статус"
+        "en" "Status"
+    }
+    "ADD_OR_SUB"
+    {
+        "ru" "По сколько прибавлять/отнимать"
+        "en" "How much to add/subtract"
+    }
+    "RED"
+    {
+        "ru" "Красный"
+        "en" "Red"
+    }
+    "GREEN"
+    {
+        "ru" "Зеленый"
+        "en" "Green"
+    }
+    "BLUE"
+    {
+        "ru" "Синий"
+        "en" "Blue"
+    }
+    "ALPHA"
+    {
+        "ru" "Прозрачность"
+        "en" "Transparency"
+    }
+    "DURATION"
+    {
+        "ru" "Время затемнения"
+        "en" "Dimming time"
+    }
+    "WELCOME"
+    {
+        "ru" "Вам доступна команда: !screen"
+        "en" "The command is available to you: !screen"
+    }
+}

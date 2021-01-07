@@ -1,0 +1,9 @@
+﻿"Phrases"
+{
+	"credits_gain"
+	{
+        "#format"       "{1:i}"
+		"ru"			"{green}[Shop]{default} Вы получили {green}{1}{default} кредит. Вы можете открыть магазин {green}!store{default} или {green}!shop{default} чтобы использовать их!"
+		"en"			"{green}[Shop]{default} You have gained {green}{1}{default} credits. You can spend them in the shop by typing {green}!shop{default} in the chat!"
+	}
+}
