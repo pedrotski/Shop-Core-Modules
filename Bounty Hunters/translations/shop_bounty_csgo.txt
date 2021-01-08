@@ -1,0 +1,56 @@
+"Phrases"
+{
+	"reward_for_murder_say_all"	//Показывает всем в чате
+	{
+		"#format"    "{1:s}{2:s}{3:d}"
+		"en"	"{1} receives the award for {2} amount of {3} credits !"
+		"ru"	"{lightseagreen}====================\n{fullred}{1} {lightslategrey}получает нараду за {fullred}{2} {lightslategrey}суммой в {aqua}{3} {darkgreen}кредитов {lightslategrey} !"
+	}
+	"reward_for_murder_say_canter_all"	//Показывает всем внизу по центру экрана
+	{
+		"#format"    "{1:s}{2:s}{3:d}"
+		"en"	"BOUNTY CLAIMED! {1} has Killed {2} and received his award in the sum of {3} credits !"
+		"ru"	"И в итоге ! {1} Убил {2} и получил свою награду суммой в {3} кредитов !"
+	}
+	"reward_for_a_head_shot_say_all"
+	{
+		"#format"    "{1:s}"
+		"en"	"Headshot {1} assigned reward !"
+		"ru"	"{lightseagreen}====================\n{lightslategrey}За голову {fullred}{1} {lightslategrey}назначина награда ! ! !\n{lightseagreen}===================="
+	}
+	"reward_for_a_head_shot_say_center_all"
+	{
+		"#format"    "{1:s}"
+		"en"	"Headshot {1} assigned reward !"
+		"ru"	"За голову {1} назначина награда ! ! !"
+	}
+	"bounty_on_your_head"
+	{
+		"#format"	"{1:d}"
+		"en"	"There is a bounty on your head for {1} credits !"
+		"ru"	"{lightseagreen}====================\nЗа {lightslategrey}вашу голову назначина награда  {aqua}{2} {darkgreen}кредитов {lightslategrey}! ! !\n{lightseagreen}===================="
+	}
+	"bounty_on_your_head_center"
+	{
+		"#format"     "{1:d}"
+		"en"	"There is a bounty on your head for {1} credits!"
+		"ru"	"====================\nЗа вашу голову назначина награда {1} кредитов! ! !\n===================="
+	}
+	"no_awards"
+	{
+		"en"	"No awards yet."
+		"ru"	"{lightseagreen}====================\n{lightslategrey}Объявленных наград ещё нет.\n{lightseagreen}===================="
+	}
+	"reward_has_been_set"	
+	{
+		"#format"     "{1:s}{2:d}"
+		"en"	"Head {1} title reward of {2} credits!"
+		"ru"	"{lightseagreen}====================\n{lightslategrey}За голову {fullred}{1} {lightslategrey}названична награда в {aqua}{2} {darkgreen}кредитов {lightslategrey}!\n{lightseagreen}===================="
+	}
+	"reward_has_been_set_center"	
+	{
+		"#format"     "{1:s}{2:d}"
+		"en"	"{1} head reward of {2} credits!"
+		"ru"	"За голову {1} названична награда в {2} кредитов !"
+	}	
+}

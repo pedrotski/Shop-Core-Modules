@@ -1,0 +1,180 @@
+"Phrases"
+{
+	//Отображение в меню шопа
+	"ROLL_SHOP_DISPLAY"
+	{
+		"ru"		"Разыграть свои кредиты"
+		"en"		"Roll Game"
+	}
+	//Сообщения в чат
+	"ROLL_PREFIX"
+	{
+		"ru"		"{GREEN}[!ROLL]{DEFAULT}"
+		"en"		"{GREEN}[!ROLL]{DEFAULT}"
+	}
+	"ROLL_NEED_MIN_PLAYERS"
+	{
+		"#format" 	"{1:i}"
+		"ru"		"Не достаточно игроков для старта розыгрыша нужно {GREEN}{1}{DEFAULT}!"
+		"en"		"Not enough players to start the draw you need {GREEN} {1} {DEFAULT}!"
+	}
+	"ROLL_NO_MIN_PLAYERS"
+	{
+		"#format" 	"{1:i}"
+		"ru"		"Розыгрыш не начнется недостаточно игроков нужно {GREEN}{1}{DEFAULT}!"
+		"en"		"The draw will not start enough players need {GREEN} {1} {DEFAULT}!"
+	}
+	"ROLL_INTERVAL_MIN"
+	{
+		"#format"	"{1:i}"
+		"ru"		"Розыгрыш будет доступен через {GREEN}{1}{DEFAULT} минут"
+		"en"		"The draw will be available in {GREEN}{1}{DEFAULT} minutes"
+	}
+	"ROLL_INTERVAL_SEC"
+	{
+		"#format"	"{1:i}"
+		"ru"		"Розыгрыш будет доступен через {GREEN}{1}{DEFAULT} секунд"
+		"en"		"The draw will be available in {GREEN}{1}{DEFAULT} seconds"
+	}
+	"ROLL_NO_ROOT"
+	{
+		"ru"		"У вас нет доступа к этой команде"
+		"en"		"You do not have access to this command."
+	}
+	"ROLL_PRE_START_1"
+	{
+		"#format"	"{1:i},{2:i}"
+		"ru"		"Введите количество кредитов для розыгрыша от {GREEN}{1}{DEFAULT} до {GREEN}{2}"
+		"en"		"Enter the number of credits for the drawing from {GREEN} {1} {DEFAULT} to {GREEN} {2}"
+	}
+	"ROLL_PRE_START_2"
+	{
+		"ru"		"Для отмены введите любой текст"
+		"en"		"To cancel enter any text"
+	}
+	"ROLL_ALREADY_COMING"
+	{
+		"ru"		"Розыгрыш уже идет, ожидайте окончания"
+		"en"		"The draw is already underway, wait for the end"
+	}
+	"PRE_ROLL_YOU_SAY_STRING"
+	{
+		"ru"		"Вы ввели текст а не число"
+		"en"		"You entered the text and not the number"
+	}
+	"PRE_ROLL_INVALID_NUMBER"
+	{
+		"ru"		"Вы ввели неверное число"
+		"en"		"You entered an invalid number"
+	}
+	"PRE_ROLL_NO_MONEY"
+	{
+		"ru"		"У вас не хватает кредитов"
+		"en"		"You do not have enough credits"
+	}
+	"UP_STRING" //верхняя строка
+	{
+		"en"		" "
+		"ru"		" "
+	}
+	"ROLL_START_1"
+	{
+		"#format"	"{1:N},{2:i}"
+		"ru"		"Игрок {GREEN}{1}{DEFAULT} запустил розыгрыш {GREEN}{2}{DEFAULT} кредитов"
+		"en"		"Player {GREEN} {1} {DEFAULT} launched the !roll game {GREEN} {2} {DEFAULT} credits"
+	}
+	"ROLL_START_1_ADM"
+	{
+		"#format"	"{1:N},{2:i}"
+		"ru"		"Админ {GREEN}{1}{DEFAULT} запустил розыгрыш {GREEN}{2}{DEFAULT} кредитов"
+		"en"		"Admin {GREEN} {1} {DEFAULT} launched the draw {GREEN} {2} {DEFAULT} credits"
+	}
+	"ROLL_START_2"
+	{
+		"ru"		"Розыгрыш начнется в конце раунда"
+		"en"		"The draw will start at the end of the round."
+	}
+	"DOWN_STRING" //нижняя строка
+	{
+		"ru"		" "
+		"en"		" "
+	}
+	"ROLL_START_PLAYER"
+	{
+		"#format"	"{1:i}"
+		"ru"		"Розыгрыш начинается, всего участников: {GREEN}{1}"
+		"en"		"The draw begins, total participants: {GREEN} {1}"
+	}
+	"ROLL_STOP_NO_PLAYER"
+	{
+		"ru"		"Розыгрыш не начинается, не хватает участников"
+		"en"		"The draw does not start, not enough participants"
+	}
+	"MONEY_BACK"
+	{
+		"#format"	"{1:i}"
+		"ru"		"Вам была возвращена ваша разыгрываемая сумма {GREEN}({GREEN}{1}{GREEN})"
+		"en"		"Your credited amount {GREEN} ({GREEN} {1} {GREEN}) was returned to you."
+	}
+	"ROLL_TIMEOUT"
+	{
+		"ru"		"Время принятия участия вышло"
+		"en"		"Participation time out"
+	}
+	"ROLL_INTERRUPTED"
+	{
+		"ru"		"Вы не участвуете в розыгрыше, меню участия было перебито другим меню"
+		"en"		"You do not participate in the draw, the participation menu was interrupted by another menu."
+	}
+	"PLAYER_ACCEPT_ROLL_PRINT_ALL"
+	{
+		"#format"	"{1:N},{2:02i}"
+		"ru"		"Игрок {1} принял участие в розыгрыше его билетик: {GREEN}№{2}"
+		"en"		"Player {1} took part in the draw of his ticket: {GREEN} №{2}"
+	}
+	"PLAYER_ACCEPT_ROLL_PRINT_CLIENT"
+	{
+		"#format"	"{1:02i}"
+		"ru"		"Вы приняли участие в розыгрыше ваш билетик: {GREEN}№{1}"
+		"en"		"You took part in the draw for your ticket: {GREEN} №{1}"
+	}
+	"PLAYER_CANCEL_ROLL"
+	{
+		"ru"		"Вы отклонили участие в розыгрыше"
+		"en"		"You rejected the draw"
+	}
+	"ROLL_WIN_TICKET"
+	{
+		"#format"	"{1:02i},{2:N},{3:i}"
+		"ru"		"Выигрышный билет под {GREEN}№{1}{DEFAULT} и он у {GREEN}{2}{DEFAULT} выйгрыш {GREEN}{3}{DEFAULT} кредитов"
+		"en"		"Winning ticket under {GREEN} №{1} {DEFAULT} and it has {GREEN} {2} {DEFAULT} win {GREEN} {3} {DEFAULT} credits"
+	}
+	"ROLL_DONT_WIN_PLAYER"
+	{
+		"#format"	"{1:02i}"
+		"ru"		"Выигрышный билет под {GREEN}№{1}{DEFAULT} но, победить вышел :C"
+		"en"		"Winning ticket under {GREEN} №{1} {DEFAULT} but, win out: C"
+	}
+	"ROLL_END_REASON_MAPCHANGE"
+	{
+		"ru"		"Розыгрыш отменен из за смены карты!"
+		"en"		"Roll canceled due to a change of map!"
+	}
+	//Сообщения в хинт
+	"ROLL_TIMER"
+	{
+		// {1} отвечает за цвет в хинте
+		// {2} отвечает за кол-во скунда
+		"#format"	"{1:s},{2:i}"
+		"ru"		"<pre>	До розыгрыша осталось: <font color='{1}'>{2}</font> сек.	</pre>"
+		"en"		"<pre>	!roll draw ends in: <font color='{1}'>{2}</font> sec.	</pre>"
+	}
+	"ROLL_PRINT"
+	{
+		// {1} {3} {5} {7} {9} отвечают за цвета в хинте
+		// {2} {4} {6} {8} {10} отвечают за числа которые будут идти с права на лево
+		"#format"	"{1:s},{2:02i},{3:s},{4:02i},{5:s},{6:02i},{7:s},{8:02i},{9:s},{10:02i}"
+		"ru"		"<pre>		Билеты</pre>\n<pre>[ <font color='{1}'>{2}</font> | <font color='{3}'>{4}</font> | <span class='fontSize-xl'><font color='{5}'>{6}</font></span> | <font color='{7}'>{8}</font> | <font color='{9}'>{10}</font> ]</pre>"
+		"en"		"<pre>		Tickets</pre>\n<pre>[ <font color='{1}'>{2}</font> | <font color='{3}'>{4}</font> | <span class='fontSize-xl'><font color='{5}'>{6}</font></span> | <font color='{7}'>{8}</font> | <font color='{9}'>{10}</font> ]</pre>"
+	}
+}
