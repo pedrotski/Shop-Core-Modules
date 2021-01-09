@@ -1,0 +1,30 @@
+"skins_human"
+{
+    "delay_before_set_spawn" "1.0" 
+
+	"skin1"	// Skins Code
+	{
+		"name"	""				// Name of Skins
+		"description"	"This skins is cool!"	// Description of skins item
+		"Model"       "" 			// Path of skin models file
+		"Model_Arms"  "" 			// Path of skin arms model file
+		"price"			"10000"		// Credit price
+		//"gold_price"	"20"    		// Gold price (if enable)
+		"sell_price"	"5000"			// Sell price, Set this to -1 to make item can't be sold
+		//"gold_sell_price"	"5" 		// Gold sell price (if enable)
+		"color"		"255 255 255 255"	// Color of skins, Don't change it if you want to have default color	
+		"preview_anim"  "default" 		// Preview Animation
+		"hide"			"0" 		// Hide the item from the shop, but admin still can see it in admin panel.
+		"luckchance"	"10" 			// Percent of luck chance if enable 
+		"duration"		"0"		// Duration of skin in minute (set to 43200 will make it 30 days)
+	}
+	"skin2"
+	{
+		"name"	"Deadpool"
+		"Model"       "models/player/custom_player/kuristaja/deadpool/deadpool.mdl"
+		"Model_Arms"  "models/player/custom_player/kuristaja/deadpool/deadpool_arms.mdl"
+		"price"			"10000"
+		"sell_price"	"5000"
+		"duration"		"0"
+	}
+}
