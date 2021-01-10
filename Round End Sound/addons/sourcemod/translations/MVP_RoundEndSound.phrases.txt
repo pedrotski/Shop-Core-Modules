@@ -1,0 +1,409 @@
+"Phrases"
+{
+////////////////////////////////////////////////////////////////
+//															  //
+//  			    DEBUG / ЖУРНАЛ ОШИБОК  					  //
+//															  //
+////////////////////////////////////////////////////////////////
+
+	"KeyValue_Struct_Not_Created_Music"
+	{
+		"#format"	"{1:s}"
+		"ru"		"KeyValues структура с путями к звуковым файлам не была создана (найдена) по неопределенным причинам. Файл должен находиться по данному пути: '{1}'"
+		"en"		"KeyValues Structure with paths to sound files was not created (found), the reason is unknown. The file must be in the given path: '{1}'"
+	}
+	"KeyValue_Struct_Not_Created"
+	{
+		"#format"	"{1:s}"
+		"ru"		"KeyValues структура не была создана (найдена) по неопределенным причинам. Файл должен находиться по данному пути: '{1}'"
+		"en"		"KeyValues Structure was not created (found), the reason is unknown. The file must be in the given path: '{1}'"
+	}
+	"KeyValue_Missing_First_Audio_Key"
+	{
+		"ru"		"KeyValues отсутствуют аудиофайлы, проверьте наличие аудифайлов в music.cfg"
+		"en"		"KeyValues missing audio files, check for audio files in music.cfg"
+	}
+	"KeyValue_Missing_First_Key"
+	{
+		"#format"	"{1:s}"
+		"ru"		"KeyValues отсутствуют первый ключ, проверьте наличие ключей в '{1}'"
+		"en"		"KeyValues the first key is missing, check for the keys in '{1}'"
+	}
+	"KeyValue_Wrong_Composition_Path"
+	{
+		"#format"	"{1:s},{2:s}"
+		"ru"		"Игрок {1} не смог получить композицию по данному пути {2} в файле players.cfg"
+		"en"		"The player {1} could not get a composition along this path {2} in file players.cfg"
+	}
+	"KeyValue_Nonexistent_Method"
+	{
+		"#format"	"{1:s}"
+		"ru"		"Из KeyValues settings.cfg была попытка извлечь метод '{1}', которого не существует."
+		"en"		"An attempt was made to get a method '{1}' from KeyValues settings.cfg, but this method does not exist."
+	}
+	"KeyValue_Missing_Kits"
+	{
+		"#format"	"{1:s}"
+		"ru"		"У игрока отсутсвуют музыкальные наборы, если вы регистрируете игрока, то он обязательно должен иметь альбом! Файл с ошибкой '{1}'."
+		"en"		"The player does not have music sets, if you register a player, then he must have an album! Error file '{1}'."
+	}
+	"KeyValue_Missing_Compositions_In_Kit"
+	{
+		"#format"	"{1:s}"
+		"ru"		"У игрока отсутсвуют аудиофайлы в альбоме! Удостоверьтесь в том, что в альбомах присутствуют еще ключи. Файл с ошибкой '{1}'."
+		"en"		"The player has no audio files in the album! Make sure there are keys in the album. Error file '{1}'."
+	}
+	"KeyValue_Missing_Method_Name"
+	{
+		"#format"	"{1:s},{2:s}"
+		"ru"		"Отсутствует основной метод 'name' у аудиофайла '{1}'! Файл с ошибкой '{2}'."
+		"en"		"The main method 'name' is missing for audio file '{1}'! Error file '{2}'."
+	}
+	"KeyValue_Missing_No_Item"
+	{
+		"#format"	"{1:s},{2:s}"
+		"ru"		"Отсутствует товар в музыкальном наборе '{1}'! Файл с ошибкой '{2}'."
+		"en"		"There is no item in the music kit '{1}'! Error file '{2}'."
+	}
+	
+////////////////////////////////////////////////////////////////
+//															  //
+//  			         MENUS / МЕНЮ  					  	  //
+//															  //
+////////////////////////////////////////////////////////////////
+
+	"Menu_Title_Music" // Main Menu
+	{
+		"ru"		"Управление музыкой на сервере"
+		"en"		"Server music management"
+	}
+	"Menu_Enable_Music"
+	{
+		"ru"		"Включить музыку MVP"
+		"en"		"Enable MVP music"
+	}
+	"Menu_Disable_Music"
+	{
+		"ru"		"Выключить музыку MVP"
+		"en"		"Disable MVP music"
+	}
+	"Menu_Toggle_Music_Specific_Player"
+	{
+		"ru"		"Переключить звучание MVP у игрока"
+		"en"		"Enable music playback of a specific player"
+	}
+	"Menu_Disable_Music_Specific_Player"
+	{
+		"ru"		"Выключить музыку у конкретного игрока"
+		"en"		"Disable music playback of a specific player"
+	}
+	"Menu_View_Music_Kits"
+	{
+		"ru"		"Ваши музыкальные наборы"
+		"en"		"Your music kits"
+	}
+	"Menu_View_Other_Music_Kits"
+	{
+		"ru"		"Чужие музыкальные наборы"
+		"en"		"Music kits of other players"
+	}
+	"Menu_Shop_Music_Kits"
+	{
+		"ru"		"Магазин"
+		"en"		"Shop"
+	}
+	"Menu_Volume"
+	{
+		"ru"		"Управление громкостью музыки"
+		"en"		"Music volume control"
+	}
+	
+	"Menu_Title_Your_Kits" // Menu Your Kits
+	{
+		"ru"		"Ваши музыкальные наборы"
+		"en"		"Your music kits"
+	}
+	"Menu_Title_Your_Have_Kits"
+	{
+		"#format"	"{1:i}"
+		"ru"		"Вы имеете {1} набор(а):"
+		"en"		"You have {1} kit(s):"
+	}
+	
+	"Menu_Title_Kit" // Menu Your Kits
+	{
+		"#format"	"{1:s}"
+		"ru"		"Музыкальный набор '{1}'"
+		"en"		"Musical kit '{1}'"
+	}
+	"Menu_Title_Your_Have_Compositions"
+	{
+		"#format"	"{1:i}"
+		"ru"		"В данном наборе {1} композиций:"
+		"en"		"In this kit, you have {1} compositions:"
+	}
+	
+	"Panel_Duration_Composition" // Composition information
+	{
+		"ru"		"Длительность:"
+		"en"		"Duration:"
+	}
+	"Panel_Cost_Composition"  
+	{
+		"ru"		"Стоимость:"
+		"en"		"Cost:"
+	}
+	"Panel_Description_Composition" 
+	{
+		"ru"		"Описание:"
+		"en"		"Description:"
+	}
+	"Panel_Demo_Composition"
+	{
+		"ru"		"Прослушать"
+		"en"		"Demonstration"
+	}
+	"Panel_Stop_Demo_Composition"
+	{
+		"ru"		"Остановить прослушивание"
+		"en"		"Stop demonstration"
+	}
+	"Panel_Buy_Button"
+	{
+		"ru"		"Купить"
+		"en"		"Buy"
+	}
+	"Panel_ExitBackButton"
+	{
+		"ru"		"Назад"
+		"en"		"Back"
+	}
+	"Panel_ExitButton"
+	{
+		"ru"		"Выйти"
+		"en"		"Exit"
+	}
+	
+	"Menu_Others_Music_Kits_Select_Player"
+	{
+		"ru"		"Выберите игрока для просмотра его наборов:"
+		"en"		"Choose a player to view music kits:"
+	}
+	"Menu_Title_Other_Kits"
+	{
+		"#format"	"{1:N}"
+		"ru"		"Музыкальные наборы игрока {1}"
+		"en"		"{1} music kits:"
+	}
+	"Menu_Title_Other_Have_Kits"
+	{
+		"#format"	"{1:i}"
+		"ru"		"Игрок имеет {1} набор(а):"
+		"en"		"The player has {1} kit(s):"
+	}
+	"Menu_Title_Other_Kit" 
+	{
+		"#format"	"{1:s}"
+		"ru"		"Музыкальный набор '{1}'"
+		"en"		"Musical kit '{1}'"
+	}
+	"Menu_Title_Other_Have_Compositions"
+	{
+		"#format"	"{1:i}"
+		"ru"		"В данном наборе {1} композиции:"
+		"en"		"In this kit, you have {1} compositions:"
+	}
+	
+	"Menu_Title_Shop"
+	{
+		"ru"		"Магазин музыкальных наборов"
+		"en"		"Music kit shop"
+	}
+	"Menu_Title_Shop_Compositions"
+	{
+		"#format"	"{1:s},{2:i}"
+		"ru"		"Набор '{1}' содержит {2} композиции:"
+		"en"		"Kit '{1}' contains {2} compositions:"
+	}
+	
+	"Menu_Title_Toggle_MVP"
+	{
+		"ru"		"Выберите игрока:"
+		"en"		"Choose a player:"
+	}
+	"Menu_Title_Note_Toggle_MVP"
+	{
+		"ru"		"[x] - запретить, [ ] - разрешить"
+		"en"		"[x] - off, [ ] - on"
+	}
+	
+	"Menu_Title_Volume"
+	{
+		"#format"	"{1:i}"
+		"ru"		"Управление громкостью"
+		"en"		"Volume control"
+	}
+	
+	"Menu_Title_Volume_Stat"
+	{
+		"#format"	"{1:i}"
+		"ru"		"Уровень громкости: {1}%"
+		"en"		"Volume level: {1}%"
+	}
+	"Menu_Increase_50"
+	{
+		"ru"		"Увеличить на 50%"
+		"en"		"Increase 50%"
+	}
+	"Menu_Increase_25"
+	{
+		"ru"		"Увеличить на 25%"
+		"en"		"Increase 25%"
+	}
+	"Menu_Increase_10"
+	{
+		"ru"		"Увеличить на 10%"
+		"en"		"Increase 50%"
+	}
+	"Menu_Increase_5"
+	{
+		"ru"		"Увеличить на 5%"
+		"en"		"Increase 5%"
+	}
+	"Menu_Reduce_50"
+	{
+		"ru"		"Уменьшить на 50%"
+		"en"		"Reduce 50%"
+	}
+	"Menu_Reduce_25"
+	{
+		"ru"		"Уменьшить на 25%"
+		"en"		"Reduce 25%"
+	}
+	"Menu_Reduce_10"
+	{
+		"ru"		"Уменьшить на 10%"
+		"en"		"Reduce 50%"
+	}
+	"Menu_Reduce_5"
+	{
+		"ru"		"Уменьшить на 5%"
+		"en"		"Reduce 5%"
+	}
+	"Menu_Start_Check_Volume"
+	{
+		"ru"		"Начать проверку громкости"
+		"en"		"Start volume check"
+	}
+	"Menu_Stop_Check_Volume"
+	{
+		"ru"		"Остановить проверку громкости"
+		"en"		"Stop checking volume"
+	}
+
+	
+////////////////////////////////////////////////////////////////
+//															  //
+//  			         CHAT / ЧАТ  					  	  //
+//															  //
+////////////////////////////////////////////////////////////////
+
+	"Chat_Dont_Have_Musical_Kits"
+	{
+		"ru"		"{darkred}У вас нет музыкальных наборов{default}"
+		"en"		"{darkred}You don't have music kits{default}"
+	}
+	"Chat_Dont_Have_Compositions"
+	{
+		"ru"		"{darkred}У вас нет композиций в данном наборе{default}"
+		"en"		"{darkred}You don't have compositions in this kit{default}"
+	}
+	"Chat_You_No_Longer_Own_Kit"
+	{
+		"ru"		"{darkred}Вам больше не принадлежит данный музыкальный набор{default}"
+		"en"		"{darkred}You no longer own this music kit{default}"
+	}
+	"Chat_Musical_Kit_Empty"
+	{
+		"ru"		"{darkred}Музыкальный комплект пуст{default}"
+		"en"		"{darkred}Musical kit is empty{default}"
+	}
+	"Chat_Client_Left_The_Server"
+	{
+		"#format"	"{1:N}"
+		"ru"		"{darkred}Игрок {1} покинул сервер{default}"
+		"en"		"{darkred}Player {1} left the server{default}"
+	}
+	"Chat_Buy_This_Product"
+	{
+		"#format"	"{1:s}"
+		"ru"		"{green}Приобрести данный товар можно по ссылке: {darkblue}{1}{default}"
+		"en"		"{green}You can buy this product by the link: {darkblue}{1}{default}"
+	}
+	"Chat_Enable_Music_Other_Player"
+	{
+		"#format"	"{1:N}"
+		"ru"		"{green}Вы {yellow}включили{green} для себя музыку {gold}MVP{green} игрока {grey}{1}{default}"
+		"en"		"{grey}{1}{default} player music was {yellow}on{default}"
+	}
+	"Chat_Disable_Music_Other_Player"
+	{
+		"#format"	"{1:N}"
+		"ru"		"{green}Вы {red}выключили{green} для себя музыку {gold}MVP{green} игрока {grey}{1}{default}"
+		"en"		"{grey}{1}{default} player music was {red}off{default}"
+	}
+	"Chat_No_Players_Available"
+	{
+		"ru"		"{darkred}На данный момент нет игроков, допустимых игроков{default}"
+		"en"		"{darkred}No players available{default}
+	}
+	"Chat_Player_MVP"
+	{
+		"#format"	"{1:N},{2:s}"
+		"ru"		"{gold}MVP{green} раунда {grey}{1}{green}! Проигрывается композиция {blue}{2}{default}"
+		"en"		"{gold}MVP{green} of the {grey}{1}{green}! Now playing {blue}{2}{default}"
+	}
+	"Chat_MVP_Sound_Off"
+	{
+		"ru"		"{green}Вы {red}выключили{green} музыку {gold}MVP{default}"
+		"en"		"{green}Music {gold}MVP{green}: {red}off{default}
+	}
+	"Chat_MVP_Sound_On"
+	{
+		"ru"		"{green}Вы {yellow}включили{green} музыку {gold}MVP{default}"
+		"en"		"{green}Music {gold}MVP{green}: {yellow}on{default}
+	}
+	"Chat_Cant_Volume_5"
+	{
+		"ru"		"{darkred}Вы не можете сделать громкость звука меньше {green}5{default}"
+		"en"		"{darkred}You cant turn the volume down below than{green}5{default}"
+	}
+	"Chat_Cant_Volume_100"
+	{
+		"ru"		"{darkred}Вы не можете сделать громкость звука больше {green}100{default}"
+		"en"		"{darkred}You cant turn up the volume more than {green}5{default}"
+	}
+	"Chat_Increased_Volume"
+	{
+		"#format"	"{1:i},{2:i}"
+		"ru"		"{green}Вы {yellow}увеличили{green} громкость звука на {blue}{1}{green}, теперь у вас {blue}{2}{default}"
+		"en"		"{green}You {yellow}increased{green} the volume by {blue}{1}{green}, now you have {blue}{2}{default}"
+	}
+	"Chat_Reduced_Volume"
+	{
+		"#format"	"{1:i},{2:i}"
+		"ru"		"{green}Вы {red}уменьшили{green} громкость звука на {blue}{1}{green}, теперь у вас {blue}{2}{default}"
+		"en"		"{green}You have {red}reduced{green} the sound volume by {blue}{1}{green}, now you have {blue}{2}{default}"
+	}
+	"Chat_Start_Check_Volume"
+	{
+		"ru"		"{green}Вы {yellow}начали{green} проверку громкости{default}"
+		"en"		"{green}You have {yellow}started{green} a sound volume check{default}"
+	}
+	"Chat_Stop_Check_Volume"
+	{
+		"ru"		"{green}Вы {red}остановили{green} проверку громкости{default}"
+		"en"		"{green}You have {red}stopped{green} checking the volume{default}"
+	}
+
+}
