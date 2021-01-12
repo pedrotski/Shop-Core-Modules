@@ -1,0 +1,25 @@
+﻿"Phrases"
+{
+	"Could not spawn"
+	{
+		"#format"   "{1:s}"
+		"en" "{green}[Shop]{default}Could not spawn {pink}{1}{default}."
+	}
+
+	"You are dead"
+	{
+		"en" "{green}[Shop]{default} You are dead."
+	}
+
+	"Your current model is not supported Neither attachment"
+	{
+		"#format"   "{1:s},{2:s},{3:s}"
+		"en" "{green}[Shop]{default} Your current model is not supported. Reason: {green}Neither attachment {pink}{1}{default} nor {pink}{2}{default} is exists on your model ({green}{3}{default})."
+	}
+
+	"Your current model is not supported Attachment"
+	{
+		"#format"   "{1:s},{2:s}"
+		"en" "{green}[Shop]{default} Your current model is not supported. Reason: {green}Attachment {pink}{1}{default} is not exists on your model ({green}{2}{default})."
+	}
+}

@@ -1,0 +1,42 @@
+"Phrases"
+{
+	"evd_bonusactive"
+	{
+		"en"		" {RED}[{GRAY}ghostcap.com{RED}] {GREEN}You have a daily bonus available! to pick up,type {RED}!bonus"
+		"ru"		" {RED}[{GRAY}ghostcap.com{RED}] {GREEN}Вам доступен ежедневный бонус, забрать - {RED}!bonus"	
+	}
+	
+	"evd_title"
+	{
+		"#format"	"{1:s}"
+		"en"		"Everyday Bonus \n \nStatus: {1}"
+		"ru"		"Ежедневный рандомный бонус \n \nБонус: {1}"
+	}
+	
+	"evd_alreadyvip"
+	{
+		"#format"	"{1:i}"
+		"en"		" {RED}[{GRAY}ghostcap.com{RED}] {GREEN}Your VIP status has been extended to {RED}{1} {GREEN}min."
+		"ru"		" {RED}[{GRAY}ghostcap.com{RED}] {GREEN}Ваш VIP-статус продлен на {RED}{1} {GREEN}мин."
+	}
+	
+	"evd_credits"
+	{
+		"#format"	"{1:i}"
+		"en"		" {RED}[{GRAY}ghostcap.com{RED}] {GREEN}You just earned {RED}{1} {GREEN}credits!"
+		"ru"		" {RED}[{GRAY}ghostcap.com{RED}] {GREEN}Вам выдано {RED}{1} {GREEN}кредитов!"
+	}
+	
+	"evd_none"
+	{
+		"en"		" {RED}[{GRAY}ghostcap.com{RED}] {GREEN}You're out of luck today."
+		"ru"		" {RED}[{GRAY}ghostcap.com{RED}] {GREEN}Сегодня вам не повезло."	
+	}
+
+	"evd_accepted"
+	{
+		"en"		" {RED}[{GRAY}ghostcap.com{RED}] {GREEN}Bonus for today received!"
+		"ru"		" {RED}[{GRAY}ghostcap.com{RED}] {GREEN}Бонус за сегодня получен!"	
+	}
+	
+}

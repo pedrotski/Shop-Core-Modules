@@ -1,0 +1,41 @@
+"Equipments"
+{ 
+    "masks" ////////////////////////// MASKS SECTION
+	{
+		"en"	"Masks"
+		"ru"	"Маски"
+        
+        
+		"demonmask" 
+        { 
+            "name"    "demonmask" 
+            "price"         "0"
+            "sell_price"         "12500"
+            "duration"			"0"
+            "model"            "models/player/holiday/facemasks/porcelain_doll.mdl" 
+            "attachment"        "facemask" 
+            "alt_attachment"    ""
+            
+			"position"		"0.000000 3.000000 -3.000000"
+			"Angles"		"3.000000 0.000000 -1.000000"
+
+			"classes"
+			{
+				"models\player\kuristaja\zombies\alma\alma.mdl"
+				{
+					"attachment"		"forward"
+
+					"position"		"0.000000 3.000000 -3.000000"
+					"Angles"		"3.000000 0.000000 -1.000000"
+				}
+				"models\player\custom_player\kuristaja\deadpool\deadpool.mdl"
+				{
+					"attachment"		"facemask"
+
+					"position"		"0.000000 3.000000 -3.000000"
+					"Angles"		"3.000000 0.000000 -1.000000"
+				}
+			}
+        } 
+	}
+}
