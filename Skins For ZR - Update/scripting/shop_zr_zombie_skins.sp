@@ -9,7 +9,7 @@
 #pragma semicolon 1
 #pragma newdecls required
 
-#define CATEGORY	"skins_human"
+#define CATEGORY	"skins_zombie"
 
 bool G_bAlreadyUsed[MAXPLAYERS+1];
 float G_fDelayBeforeSetSpawn;
@@ -17,11 +17,11 @@ float G_fDelayBeforeSetSpawn;
 ItemId selected_id[MAXPLAYERS+1] = {INVALID_ITEM, ...};
 
 KeyValues kv;
-ArrayList huArrayModels;
+ArrayList hArrayModels;
 
 public Plugin myinfo =
 {
-	name = "[Shop] CS:GO Humans Skins for Zombie:Reloaded",
+	name = "[Shop] CS:GO Zombie Skins for Zombie:Reloaded",
 	author = "FrozDark Feat R1KO, Tonki_Ton, Oylsister, Anubis Edition",
 	description = "Adds ability to buy skins",
 	version = "2.5.0-A",
@@ -42,7 +42,7 @@ public void OnPluginStart()
 	HookEvent("player_spawn", Event_PlayerSpawn);
 	//HookEvent("player_team", Event_PlayerSpawn); 
 	
-	huArrayModels = new ArrayList(ByteCountToCells(PLATFORM_MAX_PATH));
+	hArrayModels = new ArrayList(ByteCountToCells(PLATFORM_MAX_PATH));
 	
 	if (Shop_IsStarted()) Shop_Started();
 }
@@ -54,17 +54,17 @@ public void OnPluginEnd()
 
 public void OnMapStart()
 {
-	LoadTranslations("shop_zr_human_skins.phrases");
+	LoadTranslations("shop_zr_zombie_skins.phrases");
 
 	char buffer[PLATFORM_MAX_PATH];
 	
-	for (int i = 0; i < huArrayModels.Length; i++)
+	for (int i = 0; i < hArrayModels.Length; i++)
 	{
-		huArrayModels.GetString(i, buffer, sizeof(buffer));
+		hArrayModels.GetString(i, buffer, sizeof(buffer));
 		PrecacheModel(buffer, true);
 	}
 	
-	Shop_GetCfgFile(buffer, sizeof(buffer), "zr_skins_human_downloads.txt");
+	Shop_GetCfgFile(buffer, sizeof(buffer), "zr_skins_zombie_downloads.txt");
 	
 	if (!File_ReadDownloadList(buffer)) PrintToServer("File not exists %s", buffer);
 }
@@ -81,18 +81,18 @@ public void OnClientDisconnect_Post(int client)
 
 public void Shop_Started()
 {
-	CategoryId category_id = Shop_RegisterCategory(CATEGORY, "Humans Skins", "");
+	CategoryId category_id = Shop_RegisterCategory(CATEGORY, "Zombies Skins", "");
 
 	char _buffer[PLATFORM_MAX_PATH];
-	Shop_GetCfgFile(_buffer, sizeof(_buffer), "zr_skins_human.txt");
+	Shop_GetCfgFile(_buffer, sizeof(_buffer), "zr_skins_zombie.txt");
 
 	if (kv != INVALID_HANDLE) delete kv;
 
-	kv = CreateKeyValues("ZR_Skins_Human");
+	kv = CreateKeyValues("ZR_Skins_Zombie");
 
 	if (!FileToKeyValues(kv, _buffer)) ThrowError("\"%s\" not parsed", _buffer);
 
-	huArrayModels.Clear();
+	hArrayModels.Clear();
 
 	kv.Rewind();
 	G_fDelayBeforeSetSpawn = kv.GetFloat("delay_before_set_spawn", 0.5);
@@ -110,13 +110,13 @@ public void Shop_Started()
 			if (_buffer[0])
 			{
 				PrecacheModel(_buffer, true);
-				if (huArrayModels.FindString(_buffer) == -1) huArrayModels.PushString(_buffer);
+				if (hArrayModels.FindString(_buffer) == -1) hArrayModels.PushString(_buffer);
 				
 				kv.GetString("Model_Arms", _buffer, sizeof(_buffer));
 				if (_buffer[0])
 				{
 					PrecacheModel(_buffer);
-					if (huArrayModels.FindString(_buffer) == -1) huArrayModels.PushString(_buffer);
+					if (hArrayModels.FindString(_buffer) == -1) hArrayModels.PushString(_buffer);
 				}
 
 				result = true;
@@ -150,7 +150,7 @@ public void Shop_Started()
 public ShopAction OnEquipItem(int client, CategoryId category_id, const char[] category, ItemId item_id, const char[] item, bool isOn, bool elapsed)
 {
 	// Allow the zombie player to choose or toggle, but player model won't changed
-	if ((isOn || elapsed) && ZR_IsClientZombie(client))
+	if ((isOn || elapsed) && ZR_IsClientHuman(client))
 	{
 		CPrintToChat(client, "%t", "Your skins will be changed in the next round");
 
@@ -159,7 +159,7 @@ public ShopAction OnEquipItem(int client, CategoryId category_id, const char[] c
 		return Shop_UseOff;
 	}
 		
-	if ((isOn || elapsed) && ZR_IsClientHuman(client))
+	if ((isOn || elapsed) && ZR_IsClientZombie(client))
 	{
 		//CS_UpdateClientModel(client);
 		CPrintToChat(client, "%t", "Your skin will be changed at the next respawn");
@@ -170,7 +170,9 @@ public ShopAction OnEquipItem(int client, CategoryId category_id, const char[] c
 
 	Shop_ToggleClientCategoryOff(client, category_id);	
 	selected_id[client] = item_id;	
-	ProcessPlayer(INVALID_HANDLE, client);
+	//ProcessPlayer(INVALID_HANDLE, client);
+	//CreateTimer(0.2, ProcessPlayer, client, TIMER_FLAG_NO_MAPCHANGE);
+	Process(INVALID_HANDLE, client);
 	
 	return Shop_UseOn;
 }
@@ -232,35 +234,29 @@ public Action SetTransmitSkin(int entity, int client)
 	return ((owner = GetEntPropEnt(entity, Prop_Send, "m_hOwnerEntity")) != -1 && (owner != client)) ? Plugin_Handled : Plugin_Continue;
 }
 
-public Action ZR_OnClientHuman(int &client, bool &respawn, bool &protect)
+public Action ZR_OnClientInfect(int &client, int &attacker, bool &motherInfect, bool &respawnOverride, bool &respawn)
 {
-	CreateTimer(0.2, ProcessHuPlayer, client, TIMER_FLAG_NO_MAPCHANGE);
+	CreateTimer(G_fDelayBeforeSetSpawn, Process, client, TIMER_FLAG_NO_MAPCHANGE);
 	return Plugin_Continue;
-}
-
-public Action ProcessHuPlayer(Handle timer, any client)
-{
-	if (!client || selected_id[client] == INVALID_ITEM || IsFakeClient(client) || !IsPlayerAlive(client) || ZR_IsClientZombie(client)) return;
-	CreateTimer(G_fDelayBeforeSetSpawn, ProcessPlayer, client, TIMER_FLAG_NO_MAPCHANGE);
 }
 
 public void Event_PlayerSpawn(Event event, const char[] name, bool dontBroadcast)
 {
 	int client = GetClientOfUserId(event.GetInt("userid"));
+	CreateTimer(G_fDelayBeforeSetSpawn, Process, client, TIMER_FLAG_NO_MAPCHANGE);
+}
 
-	//If client isn't in a game or not alive or being a zombie then stop.
-	if (!client || selected_id[client] == INVALID_ITEM || IsFakeClient(client) || !IsPlayerAlive(client) || ZR_IsClientZombie(client)) return;
-
-	//If client condition is passed, then create a timer for applying a model.	
-	CreateTimer(G_fDelayBeforeSetSpawn, ProcessPlayer, client, TIMER_FLAG_NO_MAPCHANGE);
+public Action Process(Handle timer, any client)
+{
+	if (!client || selected_id[client] == INVALID_ITEM || IsFakeClient(client) || !IsPlayerAlive(client) || ZR_IsClientHuman(client)) return;
+	CreateTimer(0.2, ProcessPlayer, client, TIMER_FLAG_NO_MAPCHANGE);
 }
 
 public Action ProcessPlayer(Handle timer, any client)
 {
 	if(!IsClientInGame(client)) return Plugin_Stop;
 
-	//if client is a zombie then do not change the model
-	if(ZR_IsClientZombie(client)) return Plugin_Handled;
+	if(ZR_IsClientHuman(client)) return Plugin_Stop;
 		
 	char buffer[PLATFORM_MAX_PATH];
 	
