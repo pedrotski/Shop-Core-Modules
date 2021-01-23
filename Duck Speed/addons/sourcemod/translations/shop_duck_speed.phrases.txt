@@ -1,0 +1,13 @@
+"Phrases"
+{
+	"Menu. Category Display"
+	{
+		"en"			"Abilities"
+		"ru"			"Способности"
+    }
+	"Menu. Item Display"
+	{
+		"en"			"Duck Speed"
+		"ru"			"Приседание без замедления"
+    }
+}
