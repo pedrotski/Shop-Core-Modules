@@ -3,14 +3,14 @@
 	"NeedTag"
 	{
 		"#format"	"{1:s}"
-		"en"		"{purple}Put{green} {1} {purple}in your name for have access to special features!"
+		"en"		"{purple}Put{green} {1} {purple}in your name to earn CREDITS!!"
 		"ru"		"{purple}Добавьте{green} {1} {purple}в ник, чтобы получить доступ к специальным бонусам!"
 		"es"		"{purple}Lleva{green} {1} {purple}en tu nombre para recibir caracteristicas especiales!"
 	}
 	"HaveTag"
 	{
 		"#format"	"{1:i},{2:s}"
-		"en"		"{purple}You received {1} extra credit/s for have{green} {2} {purple}in your name"
+		"en"		"{purple}You received {1} extra credits for having{green} {2} {purple}in your name"
 		"ru"		"{purple}Вы получили {1} кредит(ов) за наличие{green} {2} {purple}в нике"
 		"es"		"{purple}Has recibido {1} credito/s extra por llevar{green} {2} {purple}en tu nombre"
 	}
