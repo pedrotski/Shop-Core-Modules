@@ -25,7 +25,7 @@ public void OnPluginStart()
 
 	g_hCookie = RegClientCookie("shop_info_stats", "Shop Info Stats", CookieAccess_Protected);
 
-	if Shop_IsStarted() *then
+	if (Shop_IsStarted())
 	{
 		Shop_Started();
 	}
@@ -39,7 +39,7 @@ public void OnPluginEnd()
 
 public void OnClientCookiesCached(int iClient)
 {
-	if !IsFakeClient(iClient) *then
+	if (!IsFakeClient(iClient))
 	{
 		g_iPlayerMoney[iClient][0] = 0;
 		g_iPlayerMoney[iClient][1] = 0;
@@ -48,12 +48,12 @@ public void OnClientCookiesCached(int iClient)
 
 		GetClientCookie(iClient, g_hCookie, szBuffer, sizeof szBuffer);
 
-		if szBuffer[0] *then
+		if (szBuffer[0])
 		{
 			static char szExBuffer[3][8];
 			ExplodeString(szBuffer, "|", szExBuffer, sizeof szExBuffer, sizeof szExBuffer[]);
 
-			if StringToInt(szExBuffer[2]) == g_iTime *then
+			if (StringToInt(szExBuffer[2]) == g_iTime)
 			{
 				g_iPlayerMoney[iClient][0] = StringToInt(szExBuffer[0]);
 				g_iPlayerMoney[iClient][1] = StringToInt(szExBuffer[1]);
@@ -64,7 +64,7 @@ public void OnClientCookiesCached(int iClient)
 
 public void OnClientDisconnect(int iClient)
 {
-	if !IsFakeClient(iClient) *then
+	if (!IsFakeClient(iClient))
 	{
 		static char szBuffer[18];
 
@@ -75,7 +75,7 @@ public void OnClientDisconnect(int iClient)
 
 public void OnMapStart()
 {
-	if GetTime() > g_iTime *then
+	if (GetTime() > g_iTime)
 	{
 		g_iDynamic[0] = g_iDynamic[1] = 0;
 		ClearTime();
@@ -97,14 +97,14 @@ public void Shop_Started()
 
 void SQL_Callback_Sum(Database hDatabase, DBResultSet hResults, const char[] szError, int iClient)
 {
-	if szError[0] *then
+	if (szError[0])
 	{
 		LogError("SQL_Callback_Sum: %s", szError);
 
 		return;
 	}
 
-	if SQL_FetchRow(hResults) *then
+	if (SQL_FetchRow(hResults))
 	{
 		g_iMoney[0] = hResults.FetchInt(0);
 		g_iMoney[1] = hResults.FetchInt(1);
@@ -140,7 +140,7 @@ bool FunctionSelect(int iClient)
 
 int CallBack_Panel(Menu hMenu, MenuAction eAction, int iClient, int iItem)
 {
-	if eAction == MenuAction_Select && iItem == 7 *then
+	if (eAction == MenuAction_Select && iItem == 7)
 	{
 		Shop_ShowFunctionsMenu(iClient);
 	}
@@ -152,7 +152,7 @@ public Action Shop_OnCreditsSet(int iClient, int &iCredits, int iBy_who)
 {
 	int iDifference, iPCredits = Shop_GetClientCredits(iClient);
 
-	if iCredits > iPCredits *then
+	if (iCredits > iPCredits)
 	{
 		iDifference = iCredits - iPCredits;
 
