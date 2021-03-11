@@ -1,0 +1,16 @@
+"Phrases"
+{
+	"Hud. Speed"
+	{
+		"#format"		"{1:i}"
+		
+		"ru"			"{1}"
+		"en"			"{1}"
+	}
+
+	"Menu. SpeedMeter"
+	{
+		"ru"			"Cпидометр"
+		"en"			"Speedmeter"
+	}
+}
