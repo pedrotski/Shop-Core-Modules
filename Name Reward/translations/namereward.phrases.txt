@@ -10,7 +10,7 @@
 	"HaveTag"
 	{
 		"#format"	"{1:i},{2:s}"
-		"en"		"{purple}You received {1} extra credits for having{green} {2} {purple}in your name"
+		"en"		"{purple}You received {1} extra CREDITS for having{green} {2} {purple}in your name"
 		"ru"		"{purple}Вы получили {1} кредит(ов) за наличие{green} {2} {purple}в нике"
 		"es"		"{purple}Has recibido {1} credito/s extra por llevar{green} {2} {purple}en tu nombre"
 	}
