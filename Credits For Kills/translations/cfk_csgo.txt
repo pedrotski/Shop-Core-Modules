@@ -1,0 +1,27 @@
+"Phrases"
+{
+	"death"
+	{
+		"#format"	"{1:i}"			
+		"ru"		"{GREEN}[Shop]{DEFAULT} Вы потеряли {RED}{1} {DEFAULT}кредитов"
+		"en"		"{GREEN}[Shop]{DEFAULT} You lost {RED}{1} {DEFAULT}credits"
+	}
+	"weapon_credits"
+	{
+		"#format"	"{1:s}"
+		"ru"		"{GREEN}[Shop]{DEFAULT} Вы получили кредиты за убийство с {RED}{1}"
+		"en"		"{GREEN}[Shop]{DEFAULT} You got credits for the kill with {RED}{1}{DEFAULT}Type !shop to spend!"
+	}
+	"headshot"
+	{
+		"#format"	"{1:i}"		
+		"ru"		"{GREEN}[Shop]{DEFAULT} Вы получили {RED}{1} {DEFAULT}кредитов"
+		"en"		"{GREEN}[Shop]{DEFAULT} You earned {RED}{1} {DEFAULT}credit"
+	}
+	"knife"
+	{
+		"#format"	"{1:i}"		
+		"ru"		"{GREEN}[CFK]{DEFAULT} Вы получили {RED}{1} {DEFAULT}кредитов за убийство с ножа"
+		"en"		"{GREEN}[CFK]{DEFAULT} Вы получили {RED}{1} {DEFAULT}кредитов за убийство с ножа"
+	}	
+}
