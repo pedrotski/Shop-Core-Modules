@@ -3,8 +3,10 @@
 #include <sdkhooks>
 #include <cstrike>
 #include <shop>
-#include <zombiereloaded>
+//#include <zombiereloaded>
 #include <colors_csgo>
+#undef REQUIRE_EXTENSIONS
+#include <hitboxchanger>	
 
 #pragma semicolon 1
 #pragma newdecls required
@@ -150,7 +152,8 @@ public void Shop_Started()
 public ShopAction OnEquipItem(int client, CategoryId category_id, const char[] category, ItemId item_id, const char[] item, bool isOn, bool elapsed)
 {
 	// Allow the zombie player to choose or toggle, but player model won't changed
-	if ((isOn || elapsed) && ZR_IsClientHuman(client))
+	//if ((isOn || elapsed) && ZR_IsClientHuman(client))
+	if ((isOn || elapsed) && GetClientTeam(client) == CS_TEAM_CT)
 	{
 		CPrintToChat(client, "%t", "Your skins will be changed in the next round");
 
@@ -159,7 +162,8 @@ public ShopAction OnEquipItem(int client, CategoryId category_id, const char[] c
 		return Shop_UseOff;
 	}
 		
-	if ((isOn || elapsed) && ZR_IsClientZombie(client))
+	//if ((isOn || elapsed) && ZR_IsClientZombie(client))
+	if ((isOn || elapsed) && GetClientTeam(client) == CS_TEAM_T)
 	{
 		//CS_UpdateClientModel(client);
 		CPrintToChat(client, "%t", "Your skin will be changed at the next respawn");
@@ -171,7 +175,6 @@ public ShopAction OnEquipItem(int client, CategoryId category_id, const char[] c
 	Shop_ToggleClientCategoryOff(client, category_id);	
 	selected_id[client] = item_id;	
 	//ProcessPlayer(INVALID_HANDLE, client);
-	//CreateTimer(0.2, ProcessPlayer, client, TIMER_FLAG_NO_MAPCHANGE);
 	Process(INVALID_HANDLE, client);
 	
 	return Shop_UseOn;
@@ -248,7 +251,8 @@ public void Event_PlayerSpawn(Event event, const char[] name, bool dontBroadcast
 
 public Action Process(Handle timer, any client)
 {
-	if (!client || selected_id[client] == INVALID_ITEM || IsFakeClient(client) || !IsPlayerAlive(client) || ZR_IsClientHuman(client)) return;
+	//if (!client || selected_id[client] == INVALID_ITEM || IsFakeClient(client) || !IsPlayerAlive(client) || ZR_IsClientHuman(client)) return;
+	if (!client || selected_id[client] == INVALID_ITEM || IsFakeClient(client) || !IsPlayerAlive(client) || GetClientTeam(client) == CS_TEAM_CT) return;
 	CreateTimer(0.2, ProcessPlayer, client, TIMER_FLAG_NO_MAPCHANGE);
 }
 
@@ -256,7 +260,8 @@ public Action ProcessPlayer(Handle timer, any client)
 {
 	if(!IsClientInGame(client)) return Plugin_Stop;
 
-	if(ZR_IsClientHuman(client)) return Plugin_Stop;
+	//if(ZR_IsClientHuman(client)) return Plugin_Stop;
+	if(GetClientTeam(client) == CS_TEAM_CT) return Plugin_Stop;
 		
 	char buffer[PLATFORM_MAX_PATH];
 	
