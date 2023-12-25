@@ -1,6 +1,6 @@
 # Shop-Core-Modules
 
-A repo for Shop Core modules translated into English.
+A repo of public and private modules for Shop Core translated into English.
 
 These are compatible with Shop Core or Shop Core Fork
 
